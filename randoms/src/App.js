@@ -3,6 +3,7 @@ import "./App.css";
 import emailSvg from "./assets/email.svg";
 import phoneSvg from "./assets/phone.svg";
 import locationSvg from "./assets/location.svg";
+import axios from 'axios';
 
 function App() {
   const [user, setUser] = useState();
@@ -19,6 +20,12 @@ function App() {
         console.log(data.results);
       });
   };
+  // const fetchUser=()=>{
+  //   axios.get((response)=>{
+  //     console.log(response.data)
+  //     setUser(response.data.results)
+  //   })
+  // }
 
   return (
     <div className="App">
